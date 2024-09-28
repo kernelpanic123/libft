@@ -6,7 +6,7 @@
 #    By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/27 05:34:55 by abtouait          #+#    #+#              #
-#    Updated: 2024/09/28 13:35:36 by abtouait         ###   ########.fr        #
+#    Updated: 2024/09/28 14:34:43 by abtouait         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,4 +35,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re miaou
+.PHONY: all clean fclean re 
