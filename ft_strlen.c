@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 01:30:17 by abtouait          #+#    #+#             */
-/*   Updated: 2024/09/27 06:05:13 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/09/28 15:45:06 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,4 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
+last test
