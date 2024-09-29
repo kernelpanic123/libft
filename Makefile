@@ -6,13 +6,13 @@
 #    By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/27 05:34:55 by abtouait          #+#    #+#              #
-#    Updated: 2024/09/28 14:38:54 by abtouait         ###   ########.fr        #
+#    Updated: 2024/09/29 02:14:17 by abtouait         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRC = ft_strlen.c
+SRC = ft_strlen.c ft_isdigit.c
 
 CFLAGS = -Wall -Wextra -Werror
 
