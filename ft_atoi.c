@@ -6,11 +6,12 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:52:46 by abtouait          #+#    #+#             */
-/*   Updated: 2024/10/23 12:10:41 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/10/23 12:31:18 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 int	ft_atoi(const char *str)
 
@@ -21,7 +22,8 @@ int	ft_atoi(const char *str)
 
 	i = 0;
 	signe = 1;
-	while (str[i] >= 9 && str[i] <= 13 || str[i] == ' ')
+	nombre = 0;
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 	{
@@ -29,7 +31,7 @@ int	ft_atoi(const char *str)
 			signe = -signe;
 		i++;
 	}
-	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
+	while (str[i] != '\0' && (str[i] >= '0' && str[i] <= '9'))
 	{
 		nombre = nombre * 10 + (str[i] - '0');
 		i++;
@@ -39,5 +41,5 @@ int	ft_atoi(const char *str)
 
 int	main(void)
 {
-	printf("%d", ft_atoi(" ---+--+1234ab567"));
+	printf("%d", ft_atoi(" -1234ab567"));
 }
