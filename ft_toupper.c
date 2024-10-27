@@ -1,40 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abtouait <abtouait@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 11:52:46 by abtouait          #+#    #+#             */
-/*   Updated: 2024/10/27 15:03:23 by abtouait         ###   ########.fr       */
+/*   Created: 2024/10/27 15:13:56 by abtouait          #+#    #+#             */
+/*   Updated: 2024/10/27 15:47:01 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
-
+int	ft_toupper(int c)
 {
-	int	nombre;
-	int	signe;
-	int	i;
-
-	i = 0;
-	signe = 1;
-	nombre = 0;
-	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
-		i++;
-	if (str[i] == '+' || str[i] == '-')
+	if (c >= 97 && c <= 122)
 	{
-		if (str[i] == '-')
-			signe = -signe;
-		i++;
+		return (c - 32);
 	}
-	while (str[i] != '\0' && (str[i] >= '0' && str[i] <= '9'))
-	{
-		nombre = nombre * 10 + (str[i] - '0');
-		i++;
-	}
-	return (nombre * signe);
+	return (0);
 }
-
