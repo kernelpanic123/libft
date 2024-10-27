@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/27 15:13:56 by abtouait          #+#    #+#             */
-/*   Updated: 2024/10/27 22:48:12 by abtouait         ###   ########.fr       */
+/*   Created: 2024/10/27 23:00:43 by abtouait          #+#    #+#             */
+/*   Updated: 2024/10/27 23:19:56 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+int	ft_isalnum(int c)
 {
-	if (c >= 97 && c <= 122)
+	if (ft_isalpha(c) || ft_isdigit(c))
 	{
-		c = c - 32;
+		return (1);
 	}
-	return (c);
+	else
+	{
+		return (0);
+	}
 }
