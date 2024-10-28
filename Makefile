@@ -6,13 +6,13 @@
 #    By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/27 05:34:55 by abtouait          #+#    #+#              #
-#    Updated: 2024/10/27 23:08:46 by abtouait         ###   ########.fr        #
+#    Updated: 2024/10/28 00:46:08 by abtouait         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRC = ft_isdigit.c ft_atoi.c ft_strlen.c ft_isalpha.c ft_tolower.c ft_toupper.c ft_isalnum.c
+SRC = ft_isdigit.c ft_atoi.c ft_strlen.c ft_isalpha.c ft_tolower.c ft_toupper.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strchr.c
 
 CFLAGS = -Wall -Wextra -Werror
 
