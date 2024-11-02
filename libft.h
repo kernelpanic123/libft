@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 02:31:06 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/01 16:12:16 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/11/01 20:12:58 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,12 @@ int	ft_atoi(const char *str);
 int	ft_isalpha(int c);
 int	ft_tolower(int c);
 int	ft_toupper(int c);
-int ft_isalnum(int c);
-int ft_isascii(int c);
-int ft_isprint(int c);
+int	ft_isalnum(int c);
+int	ft_isascii(int c);
+int	ft_isprint(int c);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
-int ft_strncmp(const char *s1, const char *s2, size_t n);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_strchr(const char *s, int c);
 
 #endif
