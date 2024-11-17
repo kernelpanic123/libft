@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 16:06:04 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/01 16:44:42 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/11/17 17:30:15 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,12 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 	i = 0;
 	if (n == 0)
-	{
 		return (0);
-	}
 	while ((s1[i] != '\0' && s1[i] == s2[i]) && n > i + 1)
 	{
 		i++;
 	}
 	if (s1[i] != s2[i])
-	{
 		return ((unsigned char) s1[i] - (unsigned char) s2[i]);
-	}
-	return (0);
+    return (0);
 }
