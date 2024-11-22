@@ -1,31 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/17 18:13:36 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/18 17:18:48 by abtouait         ###   ########.fr       */
+/*   Created: 2024/11/17 18:43:57 by abtouait          #+#    #+#             */
+/*   Updated: 2024/11/20 16:49:27 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-
 	size_t					i;
 	unsigned char		*byte01;
 	const unsigned char	*byte02;
 
 	byte01 = (unsigned char *)dest;
 	byte02 = (unsigned char *)src;
-	i = 0;
-	while (i < n)
+	if (byte01 < byte02)
 	{
-		byte01[i] = byte02[i];
-		i++;
+		i = 0;
+		while (i < n)
+		{
+			byte01[i] = byte02[i];
+			i++;
+		}
+	}
+	else
+	{
+		i = n;
+		while (i > 0)
+		{
+			i--;
+			byte01[i] = byte02[i];
+		}
 	}
 	return (dest);
 }
+
