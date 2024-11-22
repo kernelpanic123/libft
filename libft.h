@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 02:31:06 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/22 13:47:36 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/11/22 17:09:20 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 void ft_bzero(void *s, size_t n);
 void *ft_memset (void *s, int c, size_t n);
 void *ft_memchr(const void *s, int c, size_t n);
+char *ft_strchr(const char *s, int c);
+char	*ft_strdup(char *s1);
+char *ft_strrchr(const char *s, int c);
 
 #endif

@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/22 13:18:01 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/22 15:31:44 by abtouait         ###   ########.fr       */
+/*   Created: 2024/11/22 17:20:18 by abtouait          #+#    #+#             */
+/*   Updated: 2024/11/22 17:55:10 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+char	*strnstr(const char *haystack, const char *needle, size_t len)
 {
-	unsigned char	*byte;
-	size_t			i;
-
-	byte = (unsigned char *)s;
-	i = 0;
-	while (i < n)
-	{
-		byte[i] = c;
-		i++;
-	}
-	return (s);
+	
 }

@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 18:43:57 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/20 16:49:27 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/11/22 15:31:11 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t					i;
+	size_t				i;
 	unsigned char		*byte01;
 	const unsigned char	*byte02;
 
