@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 02:31:06 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/26 16:33:58 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/11/26 21:01:44 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 
 int	ft_isdigit(int c);
-size_t	ft_strlen(const char *s);
+size_t  ft_strlen(const char *s);
 int	ft_atoi(const char *str);
 int	ft_isalpha(int c);
 int	ft_tolower(int c);
@@ -38,12 +38,14 @@ void ft_bzero(void *s, size_t n);
 void *ft_memset (void *s, int c, size_t n);
 void *ft_memchr(const void *s, int c, size_t n);
 char *ft_strchr(const char *s, int c);
-char	*ft_strdup(char *s1);
-char *ft_strrchr(const char *s, int c);
-void *ft_calloc(size_t n, size_t taille);
-void	ft_putchar_fd(char c, int fd);
-void ft_putstr_fd(char *s, int fd);
-void	ft_putendl_fd(char *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
+char                *ft_strdup(char *s1);
+char    *ft_strrchr(const char *s, int c);
+void    *ft_calloc(size_t n, size_t taille);
+void            ft_putchar_fd(char c, int fd);
+void        ft_putstr_fd(char *s, int fd);
+void    ft_putendl_fd(char *s, int fd);
+void    ft_putnbr_fd(int n, int fd);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
