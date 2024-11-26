@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 02:31:06 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/23 18:21:10 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/11/26 16:33:58 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,9 @@ char *ft_strchr(const char *s, int c);
 char	*ft_strdup(char *s1);
 char *ft_strrchr(const char *s, int c);
 void *ft_calloc(size_t n, size_t taille);
+void	ft_putchar_fd(char c, int fd);
+void ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
