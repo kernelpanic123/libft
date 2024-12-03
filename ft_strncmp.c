@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 16:06:04 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/23 17:12:48 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:36:21 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	if (s1[i] != s2[i])
 		return ((unsigned char) s1[i] - (unsigned char) s2[i]);
-    return (0);
+	return (0);
 }

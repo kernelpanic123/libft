@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 19:57:36 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/26 22:26:40 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:36:00 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*str;
+	char			*str;
 	unsigned int	i;
 
 	if (s == NULL)

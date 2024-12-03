@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 15:49:44 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/23 17:12:48 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:06:53 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,7 @@ int	ft_isdigit(int c)
 	if (c >= '0' && c <= '9')
 		return (1);
 	else
-        return (0);
+	{
+		return (0);
+	}
 }

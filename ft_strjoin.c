@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 17:01:31 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/26 17:34:48 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:05:25 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	i = 0;
 	j = 0;
 	mot = ft_calloc(ft_strlen(s1) + ft_strlen(s2) + 1, sizeof(char));
-
 	if (!mot)
 	{
 		return (NULL);
