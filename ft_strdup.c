@@ -6,13 +6,13 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 15:25:02 by abtouait          #+#    #+#             */
-/*   Updated: 2024/11/24 20:46:22 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/12/05 22:59:05 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *s1)
+char	*ft_strdup(const	char *s1)
 {
 	int		i;
 	char	*s2;
