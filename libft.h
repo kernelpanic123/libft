@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 02:31:06 by abtouait          #+#    #+#             */
-/*   Updated: 2024/12/07 12:29:17 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/12/07 15:14:49 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_itoa(int n);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strnstr(const char *f, const char *a, size_t n);
+char	**ft_split(char const *s, char c);
 #endif
