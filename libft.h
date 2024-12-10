@@ -6,7 +6,7 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 02:31:06 by abtouait          #+#    #+#             */
-/*   Updated: 2024/12/07 15:14:49 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/12/09 13:19:17 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdio.h>
 # include <stddef.h>
 # include <stdlib.h>
+# include <string.h>
 
 int		ft_isdigit(int c);
 size_t	ft_strlen(const char *s);

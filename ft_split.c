@@ -6,33 +6,58 @@
 /*   By: abtouait <abtouait@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 12:57:40 by abtouait          #+#    #+#             */
-/*   Updated: 2024/12/09 01:12:53 by abtouait         ###   ########.fr       */
+/*   Updated: 2024/12/10 00:36:18 by abtouait         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int nbr_mots(char const *s, char c)
+static size_t    count_words(char const *s, char c)
 {
-	size_t	i;
-	size_t	mot;
-	size_t	in_word;
+    size_t    count;
+    size_t    i;
 
-	i = 0;
-	mot = 0;
-	in_word = 0;
-	while (s[i] != '\0')
-	{
-		if (s[i] == c)
-		{
-			in_word = 0;
-		}
-		else if (in_word == 0)
-		{
-			in_word = 1;
-			mot++;
-		}
-		i++;
-	}
-	return (mot);
+    count = 0;
+    i = 0;
+    while (s[i])
+    {
+        if (s[i] != c)
+        {
+            count++;
+            while (s[i] && s[i] != c)
+                i++;
+        }
+        else
+            i++;
+    }
+    return (count);
+}
+
+char    **ft_split(char const *s, char c)
+{
+    char    **ptr;
+    size_t    i;
+    size_t    j;
+    size_t    wordcount;
+    size_t    wordlen;
+
+    wordcount = count_words(s, c);
+    ptr = (char **)malloc(sizeof(char *) * (wordcount + 1));
+    if (!ptr)
+        return (NULL);
+    i = 0;
+    j = 0;
+    while (i < wordcount)
+    {
+        while (s[j] && s[j] == c)
+            j++;
+        wordlen = 0;
+        while (s[j + wordlen] && s[j + wordlen] != c)
+            wordlen++;
+        ptr[i] = ft_substr(s, j, wordlen);
+        i++;
+        j += wordlen;
+    }
+    ptr[i] = NULL;
+    return (ptr);
 }
